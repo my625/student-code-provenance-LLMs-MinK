@@ -58,8 +58,6 @@ Five groups’ assignment notebooks are processed through custom workflows to ex
 
 ---
 
----
-
 ## Installation and Usage
 
 ### 1. Environment Setup
@@ -68,6 +66,26 @@ Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+
+### 2. Run Min-K% Method on Python Code Dataset
+
+```bash
+python code_provenance_mink.py
+
+### 3. Run Case Studies
+
+Run student code analysis:
+
+```bash
+python case_study_code_analysis.py
+
+Compute and visualize metrics:
+
+```bash
+python case_study_metrics.py
+
+
+
 
 
 
