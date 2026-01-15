@@ -34,7 +34,7 @@ Our evaluations span both **open-source** and **commercial** LLM families.
 
 ### Python Code Samples
 
-Python code samples are extracted from the **ProCQA dataset**.  
+Python code samples are extracted from the **[ProCQA dataset](https://drive.google.com/drive/folders/1jYrndynwwlLwtgAKmZWeBh-PvHvAXz4Z?usp=sharing)**.  
 ProCQA comprises approximately **1.008 million** records across **11 programming languages** including:
 
 > Python, Java, JavaScript, Ruby, C, C++, C#, Rust, PHP, Lisp, and Go.
@@ -54,7 +54,7 @@ These serve as our **member code corpus** for membership inference and provenanc
 Supplementary analysis was performed on anonymized code submissions collected during a **student programming hackathon**.  
 Five groups’ assignment notebooks are processed through custom workflows to explore memorization behavior within educational contexts.
 
-> **Note:** These IPython notebooks are **not publicly released** pending participant consent and privacy clearance.
+> **Note:** These IPython notebooks are not publicly released yet.
 
 ---
 
@@ -66,11 +66,13 @@ Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+```
 
 ### 2. Run Min-K% Method on Python Code Dataset
 
 ```bash
 python code_provenance_mink.py
+```
 
 ### 3. Run Case Studies
 
@@ -78,14 +80,10 @@ Run student code analysis:
 
 ```bash
 python case_study_code_analysis.py
+```
 
 Compute and visualize metrics:
 
 ```bash
 python case_study_metrics.py
-
-
-
-
-
-
+```
