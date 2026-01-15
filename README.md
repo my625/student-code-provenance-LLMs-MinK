@@ -5,7 +5,7 @@ This repository contains code and accompanying materials for the paper
 
 Our study investigates memorization patterns and data provenance in large language models (LLMs) when trained or prompted with educational programming code. We adapt and extend the **Min-K% probability approach**, enhanced with **synthetic non-member code generation**, for **Python code**-based membership inference and provenance tracking.
 
----
+
 
 ## Overview
 
@@ -19,7 +19,7 @@ This project aims to:
 
 Our evaluations span both **open-source** and **commercial** LLM families.
 
----
+
 
 ## Evaluated Models
 
@@ -28,7 +28,7 @@ Our evaluations span both **open-source** and **commercial** LLM families.
 | **Open-source (free)** | GPT-2, DialoGPT-medium, DialoGPT-large DialoGPT |
 | **Commercial / SOTA** | GPT-5, Gemini-2.5-Flash, Mistral-Small-24B-Instruct, DeepSeek-V3, LLaMA-3.3-70B-Instruct |
 
----
+
 
 ## Dataset
 
@@ -47,7 +47,7 @@ Each record in ProCQA consists of:
 For this study, only the **`answer`** field was used.  
 These serve as our **member code corpus** for membership inference and provenance tracking.
 
----
+
 
 ## Student Assignment Code Analysis
 
@@ -56,7 +56,7 @@ Five groups’ assignment notebooks are processed through custom workflows to ex
 
 > **Note:** These IPython notebooks are not publicly released yet.
 
----
+
 
 ## Installation and Usage
 
