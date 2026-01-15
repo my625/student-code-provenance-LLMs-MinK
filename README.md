@@ -34,7 +34,7 @@ Our evaluations span both **open-source** and **commercial** LLM families.
 
 ### Python Code Samples
 
-Python code samples are extracted from the **[ProCQA dataset](https://drive.google.com/drive/folders/1jYrndynwwlLwtgAKmZWeBh-PvHvAXz4Z?usp=sharing)**.  
+Python code samples are extracted from the **[ProCQA dataset](https://drive.google.com/drive/folders/1jYrndynwwlLwtgAKmZWeBh-PvHvAXz4Z?usp=sharing)** (i.e., 'qa.en.python.json')
 ProCQA comprises approximately **1.008 million** records across **11 programming languages** including:
 
 > Python, Java, JavaScript, Ruby, C, C++, C#, Rust, PHP, Lisp, and Go.
