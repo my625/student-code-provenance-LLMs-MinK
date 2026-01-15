@@ -1,1 +1,1 @@
-# student-code-provenance-LLMs-MinK
+# Tracing Code Provenance and Memorization for Programming Education
