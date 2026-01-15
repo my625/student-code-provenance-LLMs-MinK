@@ -34,8 +34,7 @@ These serve as our **member code corpus** for membership inference and provenanc
 
 ## Student Assignment Code Analysis
 
-Supplementary analysis was performed on anonymized code submissions collected during a **student programming hackathon**.  
-Five groups’ assignment notebooks are processed through custom workflows to explore memorization behavior within educational contexts.
+Supplementary analysis was performed on anonymized code submissions collected during a **student programming hackathon** (IPython notebooks from five groups were analyzed).
 
 > **Note:** These IPython notebooks are not publicly released yet.
 
