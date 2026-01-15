@@ -1,0 +1,18 @@
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+nbformat>=5.9.0
+requests>=2.31.0
+openai>=1.0.0
+google-generativeai>=0.3.0
+huggingface-hub>=0.16.0
+tqdm>=4.65.0
+pathlib2>=2.3.7; python_version < '3.4'
+
+# Optional: For Google Colab compatibility
+# google-colab (install only in Colab environment)
