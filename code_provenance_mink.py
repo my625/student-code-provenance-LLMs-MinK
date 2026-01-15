@@ -203,31 +203,31 @@ def load_member_data(filename='qa.en.python.json'):
 
                         # Provide helpful error information
                         if "Unterminated string" in str(e):
-                            print(f"   💡 This appears to be an unterminated string error.")
-                            print(f"   🔧 Common causes:")
+                            print(f"      This appears to be an unterminated string error.")
+                            print(f"      Common causes:")
                             print(f"      - Unescaped quotes in the JSON")
                             print(f"      - Missing closing quotes")
                             print(f"      - Invalid escape sequences")
                             print(f"      - Line breaks within string values")
-                            print(f"   💡 Try running: python test_jsonl_parsing.py")
+                            print(f"      Try running: python test_jsonl_parsing.py")
 
                         continue
     except FileNotFoundError:
-        print(f"❌ ERROR: File {filename} not found!")
-        print(f"📋 Please upload the {filename} file to the current directory.")
-        print(f"💡 The file should contain JSONL format data with 'answer' field containing Python code.")
+        print(f" ERROR: File {filename} not found!")
+        print(f" Please upload the {filename} file to the current directory.")
+        print(f" The file should contain JSONL format data with 'answer' field containing Python code.")
         raise FileNotFoundError(f"Required file {filename} not found. Please upload the JSONL file.")
 
-    print(f"📊 Parsing results: {len(data)} successful, {error_count} errors out of {line_count} lines")
+    print(f" Parsing results: {len(data)} successful, {error_count} errors out of {line_count} lines")
 
     if error_count > 0:
-        print(f"⚠️  WARNING: {error_count} JSON parsing errors found!")
-        print(f"💡 Consider fixing the JSON formatting or using a different file.")
-        print(f"🔧 Run 'python test_jsonl_parsing.py' for detailed analysis.")
+        print(f"  WARNING: {error_count} JSON parsing errors found!")
+        print(f"  Consider fixing the JSON formatting or using a different file.")
+        print(f"  Run 'python test_jsonl_parsing.py' for detailed analysis.")
 
     if not data:
-        print(f"❌ ERROR: No valid data found in {filename}!")
-        print(f"💡 Please ensure the file contains valid JSONL format data.")
+        print(f" ERROR: No valid data found in {filename}!")
+        print(f" Please ensure the file contains valid JSONL format data.")
         raise ValueError(f"No valid data found in {filename}")
 
     print(f"Loaded {len(data)} member samples")
@@ -249,8 +249,8 @@ def load_member_data(filename='qa.en.python.json'):
                     break
 
     if not member_texts:
-        print(f"❌ ERROR: No text content found in {filename}!")
-        print(f"💡 Please ensure the file contains 'answer', 'text', or 'content' fields with string values.")
+        print(f" ERROR: No text content found in {filename}!")
+        print(f" Please ensure the file contains 'answer', 'text', or 'content' fields with string values.")
         raise ValueError(f"No text content found in {filename}")
 
     print(f"Extracted {len(member_texts)} member texts")
@@ -261,7 +261,7 @@ def create_synthetic_non_member_data(member_texts, num_samples=None):
     if num_samples is None:
         num_samples = len(member_texts)
 
-    print(f"🔄 Creating {num_samples} synthetic non-member samples...")
+    print(f" Creating {num_samples} synthetic non-member samples...")
 
     # Balanced approach for synthetic data generation
     transformation_weights = {
@@ -303,7 +303,7 @@ def create_synthetic_non_member_data(member_texts, num_samples=None):
 
         non_member_texts.append(transformed)
 
-    print(f"✅ Created {len(non_member_texts)} synthetic non-member samples")
+    print(f" Created {len(non_member_texts)} synthetic non-member samples")
     return non_member_texts
 
 def apply_semantic_transformation(text):
@@ -3881,3 +3881,4 @@ def update_api_keys():
     for model_key, config in SUPPORTED_MODELS.items():
         if config.get('type') != 'huggingface':
             print(f"{config['name']}: {config.get('api_key', 'NOT SET')[:20]}...")
+
