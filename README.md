@@ -1,23 +1,6 @@
 # Tracing Code Provenance and Memorization for Programming Education
 
-This repository contains code and accompanying materials for the paper  
-**"Tracing Code Provenance and Memorization in LLMs for Programming Education"**.
-
-Our study investigates memorization patterns and data provenance in large language models (LLMs) when trained or prompted with educational programming code. We adapt and extend the **Min-K% probability approach**, enhanced with **synthetic non-member code generation**, for **Python code**-based membership inference and provenance tracking.
-
-
-
-## Overview
-
-Large language models increasingly support programming education, yet their exposure to student-generated code raises ethical and technical concerns about memorization and data leakage.
-
-This project aims to:
-
-- Conduct **membership inference attacks (MIA)** on code datasets to quantify memorization.  
-- Use **synthetic non-member generation** for robust statistical calibration.  
-- Perform **provenance tracing** to assess data origin consistency and influence.  
-
-Our evaluations span both **open-source** and **commercial** LLM families.
+This repository contains code and accompanying materials for the paper "Tracing Code Provenance and Memorization in LLMs for Programming Education". We apply the Min-K% probability approach, enhanced with synthetic non-member code generation, to Python code for membership inference and provenance tracking. Our analysis uses a curated dataset of student Python programming assignments from higher-education to assess code provenance. 
 
 
 
