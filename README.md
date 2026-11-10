@@ -56,7 +56,16 @@ python -m pip install -r requirements.txt
 python code_provenance_mink.py
 ```
 
-### 3. Run Case Studies
+### 3. Run SaMIA Method on Python Code Dataset
+
+```bash
+python samia_for_code.py
+```
+
+#### Note: Before executing either script (code_provenance_mink.py or samia_for_code.py), ensure that your OpenRouter API key is correctly configured by replacing your_openrouter_api_key with your actual API key. Both scripts require a valid OpenRouter API key to access the required LLM.
+
+
+### 4. Run Case Studies
 
 Run student code analysis:
 
